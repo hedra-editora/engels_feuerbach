@@ -3,7 +3,7 @@
 \usepackage[largepost]{hedraoptions} %% << %%%%%%%%%%%%%%%%
 \usepackage[baruch]{hedrastyles}
 \usepackage[xetex,chicagofootnotes]{tipografia}
-\usepackage[standart,sempontinhos]{toc}
+\usepackage[standart,compontinhos]{toc}
 \usepackage{hedraextra}
 \usepackage{penalidades}
 \usepackage{graficos}
@@ -75,9 +75,9 @@
 
 \usepackage{fontspec}
 
-%\usepackage{Formular}
 \newfontfamily\Formular{Formular-Regular}[
-BoldFont = Formular-Bold.otf]	
+BoldFont = Formular-Bold.otf,
+ItalicFont = Formular-Italic.otf]
 %\newcommand{\Formular}[1]{#1}
 
 %--------------------------------------------ALTERAR DISTÃNCIA ENTRE TÍTULO DO SUMÁRIO E CAPÍTULOS
@@ -164,14 +164,22 @@ BoldFont = Formular-Bold.otf]
 
 \begin{document}
 
+\chapter{Introdução}
+
+\lipsum[1]
+\lipsum[20]
+\lipsum[30]
+\lipsum[13]
+\lipsum[14]
+\lipsum[19]
+
 \chapter*{}
 \addcontentsline{toc}{part}{Ludwig Feuerbach e o fim da filosofia clássica alemã}
 \begin{center}
 \begin{vplace}[0.3]
 \Large
-Ludwig Feuerbach e o fim da filosofia clássica alemã\\
-\emph{Ludwig Feuerbach und der Ausgang der
-klassischen deutschen Philosophie}
+Ludwig Feuerbach e o fim\\ da filosofia clássica alemã\\
+\emph{Ludwig Feuerbach und der Ausgang\\ der klassischen deutschen Philosophie}
 \end{vplace}
 \end{center}
 \thispagestyle{empty}
