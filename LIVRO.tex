@@ -1,4 +1,4 @@
-\documentclass[semcabeco,showtrims,trimframe,12pt,conselho,spreadimages]{memoir}
+\documentclass[semcabeco,showtrims,trimframe,11pt,conselho,spreadimages]{memoir}
 
 \usepackage[largepost]{hedraoptions} %% << %%%%%%%%%%%%%%%%
 \usepackage[baruch]{hedrastyles}
@@ -19,7 +19,7 @@
 
 \newcommand{\forceindent}{\leavevmode{\parindent=1,4em\indent}}
 
-\linespread{1.15}
+\linespread{1.08}
 
 \usepackage{endnotes}
 \renewcommand{\notesname}{Notas}
@@ -164,14 +164,7 @@ ItalicFont = Formular-Italic.otf]
 
 \begin{document}
 
-\chapter{Introdução}
-
-\lipsum[1]
-\lipsum[20]
-\lipsum[30]
-\lipsum[13]
-\lipsum[14]
-\lipsum[19]
+\input{INTRO}
 
 \chapter*{}
 \addcontentsline{toc}{part}{Ludwig Feuerbach e o fim da filosofia clássica alemã}
@@ -189,4 +182,9 @@ Ludwig Feuerbach e o fim\\ da filosofia clássica alemã\\
 \ParallelRText{ \input{PORTUGUES}} %
 %\renewcommand{\ParallelAtEnd}{\noindent{}\vspace{1cm}\Large{Notas}}
 \end{Parallel}
+\pagebreak
+\thispagestyle{empty}
+\movetooddpage
+\addcontentsline{toc}{chapter}{Notas}
+\theendnotes
 \end{document}
