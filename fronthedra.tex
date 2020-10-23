@@ -3,7 +3,7 @@
 {\Formular{\Huge{\titulagemfront{}}}}
 \vspace{11.25mm}
 
-{\Formular\LARGE{\autor}}
+{\Brabo\LARGE{\autor}}
 \vfill
 \clearpage
 
@@ -22,7 +22,7 @@
 \linha{indicação}{\indicacao}\smallskip
 \linha{edição}{\edicao}
 \linha{coedição}{\coedicao}
-\linhalayout{editor-assistente}{Paulo Henrique Pompermaier}
+\linhalayout{editor assistente}{Paulo Henrique Pompermaier}
 %\linha{assistência editorial}{\assistencia}
 \linha{revisão}{\revisao}
 \linha{preparação}{\preparacao}
@@ -58,11 +58,11 @@ Foi feito o depósito legal.\\\endgroup
 {\Formular{\Huge{\titulagem}}}
 \vspace{11.25mm}
 
-{\Formular\LARGE{\autor} \par}%\vspace{1.5ex}}
+{\Brabo\LARGE{\autor} \par}%\vspace{1.5ex}}
 \vspace{4cm} %9.3cm
 \ifdef{\organizador}{{\small {\organizador} (\textit{organização})} \par}{}
 \ifdef{\introdutor}{{\small {\introdutor}\\ (\textit{prefácio} e \textit{tradução})} \par}{}
-\ifdef{\tradutor}{{\small {\tradutor}\\ (\textit{tradução})}\par}{}\vspace{1.5cm}
+\ifdef{\tradutor}{{\small {\tradutor}\\ (\textit{tradução} e \textit{posfácio})}\par}{}\vspace{1.5cm}
 
 {{\footnotesize{} \ifdef{\numeroedicao}{\numeroedicao}{1}ª edição} \par}
 %logos
@@ -72,7 +72,7 @@ Foi feito o depósito legal.\\\endgroup
 %\includegraphics[width=.4\textwidth,trim=0 0 25 0]{logo.jpg}\\\smallskip
 \par\clearpage\endgroup
 % Resumo -------------------------------------------------------
-\begingroup \footnotesize \parindent0pt \parskip 5pt \thispagestyle{empty} \vspace*{.25\textheight}\mbox{} \vfill
+\begingroup \footnotesize \parindent0pt \parskip 5pt \thispagestyle{empty} \vspace*{-.25\textheight}\mbox{} \vfill
 \baselineskip=.92\baselineskip
 \IfFileExists{PRETAS.tex}{\input{PRETAS}}{% 
 \ifdef{\resumo}{\resumo\par}{}
