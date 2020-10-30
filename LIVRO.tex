@@ -125,20 +125,18 @@ ItalicFont = Formular-Italic.otf]
 
 \newcommand{\mystar}{{\fontfamily{lmr}\selectfont$\star$}}
 
-%\makeatletter
-%\renewcommand{\@chapapp}{}% Not necessary...
-%\newenvironment{chapquote}[2][2em]
-%  {\setlength{\@tempdima}{#1}%
-%   \def\chapquote@author{#2}%
-%   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
-%   \itshape}
-%  {\par\scriptsize\hfill-- \chapquote@author\hspace*{\@tempdima}\par\bigskip}
-%\makeatother
+\makeatletter
 
-%\newcommand\Chapter[2]{\chapter
-%  [#1\hfil\hbox{}\protect\linebreak{\itshape#1}]%
-%  {#1\\[2ex]\Large\itshape#2}%
-%}
+\def\@xfootnote[#1]{%
+  \protected@xdef\@thefnmark{#1}%
+  \@footnotemark\@footnotetext}
+%\def\footnoterule{\kern-8\p@
+   %\hrule \@width 2in \kern 7.6\p@} % the \hrule is .4pt high
+\skip\footins=10mm\@plus3mm\@minus5mm
+\makeatother
+
+\hyphenation{Feuer-bach}
+\hyphenation{rea-cio-ná-rios}
 
 \begin{document}
 
